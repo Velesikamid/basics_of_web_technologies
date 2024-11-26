@@ -1,24 +1,119 @@
-body {
-    background-color: bisque;
+.grid-container {
+    display: grid;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.content {
+    grid-template-areas:
+        "header header header"
+        "introduction introduction introduction"
+        "main main main"
+        "footer footer footer";
+}
+
+.grid-item {
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    width: 100%;
+}
+
+.introduction {
+    grid-area: introduction;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.introduction h1 {
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    background-color: #96BCEF;
+}
+
+.header a {
+    background-color: pink;
+    padding: 5px;
+    border-radius: 10px;
+    color: #696969;
+}
+
+#main {
+    grid-area: main;
+    flex-direction: column;
 }
 
 .main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 10px;
-    padding: 10px;
+    grid-template-areas:
+        "photo description example"
+        "photo button example";
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+    margin: 10px 0;
+    background-color: moccasin;
+    border-radius: 10px;
+}
+
+.photo {
+    grid-area: photo;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo img {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.description {
+    grid-area: description;
+}
+
+.example {
+    grid-area: example;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    grid-area: button;
+    padding-top: 0;
+}
+
+.button button {
+    background-color: #96BCEF;
+    border-radius: 10px;
+    border: solid #96BCEF;
 }
 
 .footer {
-    display: flex;
+    grid-area: footer;
+    background-color: #96BCEF;
+    flex-direction: column;
 }
 
-/* Temporary rules for visibility */
-div {
-    border: solid brown 3px;
+.contacts {
+    justify-content: space-around;
 }
 
-.footer>p {
-    border: solid brown 3px;
+.contacts * {
+    background-color: pink;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 0;
 }

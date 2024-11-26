@@ -1,32 +1,150 @@
 <!DOCTYPE html>
 <html lang="ru">
-
-<head>
-    <title>Star Wars Jedi: Fallen Order</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-
-<body>
-    <div class="header">
-        <p>It's header</p> <!-- temp -->
-    </div>
-    <div class="main">
-        <!-- start temp -->
-        <div class="item1">1</div>
-        <div class="item2">2</div>
-        <div class="item3">3</div>
-        <div class="item4">4</div>
-        <div class="item5">5</div>
-        <div class="item6">6</div>
-        <div class="item7">7</div>
-        <div class="item8">8</div>
-        <div class="item9">9</div>
-        <!-- end temp -->
-    </div>
-    <div class="footer">
-        <p>It's footer</p> <!-- temp -->
-        <p>It's footer, too</p> <!-- temp -->
-    </div>
-</body>
-
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Обучение программированию</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <div class="grid-container content">
+            <div class="grid-item header flex-container">
+                <a href="#introduction">Главная</a>
+                <a href="#main">Каталог</a>
+                <a href="#footer">Контакты</a>
+            </div>
+            <div class="grid-item introduction flex-container" id="introduction">
+                <h1>Стань программистом!</h1>
+                <p>
+                    Вас приветствует компания "Чёрное солнце"!<br><br>
+                    В нашей команде работают лучшие специалисты мира, с любовью
+                    составляющие специально для вас курсы по самым востребованным
+                    на сегодняшний день языкам и технологиям мира IT!<br><br>
+                    Только у нас вы можете выбрать удобное для обучения время!
+                    Вам не надо никуда ездить, не надо никуда ходить - обучение
+                    проходит дистанционно по заранее записанным лекциям с подробнейшим
+                    разбором каждой темы и множеством задач на закрепление материала!<br><br>
+                    Так чего же вы ждёте?! Скорее выбирайте курс и начинайте свой путь
+                    к высокооплачиваемой и востребованной профессии!
+                </p>
+            </div>
+            <div class="grid-item flex-container" id="main">
+                <div class="main grid-container">
+                    <div class="grid-item photo flex-container">
+                        <img src="images/cpp.jpg" alt="C++ code">
+                    </div>
+                    <div class="grid-item description flex-container">
+                        <p>
+                            C++ считается одним из сложнейших и быстрейших языков программирования.
+                            И именно поэтому вы просто обязаны его выучить, если хотите стать
+                            хорошим, востребованным программистом!<br>
+                            И наши преподаватели помогут вам с этим! Все темы разобраны и
+                            разложены по полочкам так, что вы точно не запутаетесь! И даже
+                            такая сложная тема, как указатели, станет вам ясна как день после
+                            лекции наших преподавателей! А множество практических задач помогут
+                            закрепить пройденный материал, чтобы больше никогда в нём не путаться!
+                        </p>
+                    </div>
+                    <div class="grid-item button flex-container">
+                        <button>200$</button>
+                    </div>
+                    <div class="grid-item example flex-container">
+                        <p>
+                            <strong>C++ используется в:</strong>
+                            <ul>
+                                <li>разработке игр;</li>
+                                <li>программировании роботов;</li>
+                                <li>разработке операционных систем;</li>
+                                <li>создании драйверов;</li>
+                                <li>создании многого другого, что требует высокой скорости
+                                    исполнения...
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="main grid-container">
+                    <div class="grid-item photo flex-container">
+                        <img src="images/py.jpg" alt="Python code">
+                    </div>
+                    <div class="grid-item description flex-container">
+                        <p>
+                            Python - очень удобный и функциональный язык программирования,
+                            у которого есть огромное количество модулей и библиотек,
+                            ещё больше расширяющих его возможности.<br>
+                            И самое замчательное в этом языке то, что его очень легко выучить
+                            за счёт простоты синтаксиса и отсутствия кучи скобок и точек с
+                            запятыми! Тем не менее простота языка не мешает быть ему очень
+                            глубоким. Однако это не страшно, ведь наши преподаватели
+                            объяснят всё настолько подробно и въедливо, что ни одна мелочь
+                            не ускользнёт от вас!
+                        </p>
+                    </div>
+                    <div class="grid-item button flex-container">
+                        <button>175$</button>
+                    </div>
+                    <div class="grid-item example flex-container">
+                        <p>
+                            <strong>Python используется в:</strong>
+                            <ul>
+                                <li>интернет-приложениях;</li>
+                                <li>разработке программного обеспечения;</li>
+                                <li>науке о данных и машинном обучении;</li>
+                                <li>геймдеве;</li>
+                                <li>автоматизации процессов;</li>
+                                <li>создании многого другого, что требует высокой скорости
+                                    написания кода...
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="main grid-container">
+                    <div class="grid-item photo flex-container">
+                        <img src="images/js.jpg" alt="JS code">
+                    </div>
+                    <div class="grid-item description flex-container">
+                        <p>
+                            JavaScript - необходимейший для любого frontend-разработчика
+                            инструмент, позволяющий писать красивые, функциональные,
+                            интрактивные сайты.<br>
+                            И только у нас вы сможете выучить его по такой низкой цене!
+                            При этом преподаватели разберут с вами всё настолько подробно,
+                            что у вас не останется вопросов! А если они и останутся, наши
+                            специалисты будут рады ответить вам на них! А множество
+                            практических задач не только помогут лучше понять и освоить
+                            язык, но и соберут вам отличнейшее портфолио для дальнейшего
+                            трудоустройства!
+                        </p>
+                    </div>
+                    <div class="grid-item button flex-container">
+                        <button>125$</button>
+                    </div>
+                    <div class="grid-item example flex-container">
+                        <p>
+                            <strong>JS используется в:</strong>
+                            <ul>
+                                <li>фронтенде;</li>
+                                <li>бэкенде;</li>
+                                <li>расширениях для браузера;</li>
+                                <li>мобильных приложениях;</li>
+                                <li>играх;</li>
+                                <li>машинном обучении;</li>
+                                <li>базах данных;</li>
+                                <li>интернете вещей...</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item footer flex-container" id="footer">
+                <h2>Контакты</h2>
+                <div class="contacts flex-container">
+                    <p>89270140601</p>
+                    <p>Velesikamid05082005@gmail.com</p>
+                    <a href="https://vk.com/velesikamid">ВК</a>
+                    <a href="https://t.me/Velesikamid">Telegram</a>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
